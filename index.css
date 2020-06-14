@@ -1,0 +1,92 @@
+/* Use entire page */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.navBar {
+    height: 56px;
+    padding: 0 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navBar .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.video {
+    width: 65%;
+}
+
+.frame {
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.container iframe, .container object, .container embed {
+    display: block;
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.recommendations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 50px;
+}
+
+.recommendations img {
+    margin: 5px;
+    height: 94px;
+}
+
+.video h1 {
+    color: rgb(3,3,3);
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.video h2 {
+    color: #7a6069;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.recommendations h1 {
+    color: rgb(3,3,3);
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+hr {
+    border-top: 1px solid #e9e9e9;
+    width: 100%;
+}
